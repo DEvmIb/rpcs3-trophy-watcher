@@ -16,7 +16,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build -c release --no-restore
+      run: dotnet build -c release --no-restore -r linux-x64
     - name: publish
       run: dotnet publish -p:PublishSingleFile=true --no-self-contained -r linux-x64 -p:DebugType=None -p:DebugSymbols=false
     - name: Upload a Build Artifact
@@ -25,4 +25,4 @@ jobs:
         # Artifact name
         name: trophy #.zip will be added automatically
         #path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/linux-x64/publish/*.*
-        path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/*.*
+        path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/linux-x64/publish/*.*
