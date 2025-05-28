@@ -35,9 +35,9 @@ jobs:
 
     
 
-    - name: Restore dependencies
+    #- name: Restore dependencies
 
-      run: dotnet restore
+     # run: dotnet restore
 
     
 
