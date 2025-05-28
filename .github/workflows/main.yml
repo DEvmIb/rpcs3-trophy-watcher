@@ -22,4 +22,4 @@ jobs:
       with:
         # Artifact name
         name: trophy #.zip will be added automatically
-        path: bin/release/net8.0/*.*
+        path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/*.*
