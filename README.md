@@ -16,6 +16,4 @@ trophy.exe "C:\rpcs3\dev_hdd0\home\00000001\trophy"
 
 This is an example how you can build your own Archivement Watcher.
 
-<div align="center">
-<img src="https://github.com/DEvmIb/rpcs3-trophy-watcher/blob/master/example/what.gif?raw=true" width="100">
-</div>
+![what](/example/what.gif)
