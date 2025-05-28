@@ -3,7 +3,7 @@
 ## Running
 
 ```
-trophy.exe "C:\\rpcs3\\dev_hdd0\\home\\00000001\\trophy"
+trophy.exe "C:\rpcs3\dev_hdd0\home\00000001\trophy"
 ```
 
 ## Output
@@ -16,4 +16,6 @@ trophy.exe "C:\\rpcs3\\dev_hdd0\\home\\00000001\\trophy"
 
 This is an example how you can build your own Archivement Watcher.
 
-![what](https://raw.githubusercontent.com/DEvmIb/rpcs3-trophy-watcher/master/example/what.gif)
+<div align="center">
+<img src="https://github.com/DEvmIb/rpcs3-trophy-watcher/blob/master/example/what.gif?raw=true" width="100">
+</div>
