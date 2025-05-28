@@ -18,7 +18,7 @@ jobs:
     - name: Build
       run: dotnet build -c release --no-restore
     - name: publish
-      run: dotnet publish -p:PublishSingleFile=true --no-self-contained -r linux-x64 -p:DebugType=None -p:DebugSymbols=false
+      run: dotnet publish -p:PublishSingleFile=true --self-contained=true -r linux-x64 -p:DebugType=None -p:DebugSymbols=false
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
       with:
