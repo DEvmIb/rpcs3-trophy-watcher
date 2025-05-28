@@ -10,18 +10,18 @@ jobs:
     - name: Checkout source code
       uses: actions/checkout@v2
     - name: Setup .NET
-      if: always()
+      if: success() || failure()
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      if: always()
+      if: success() || failure()
       run: dotnet restore
     - name: Build
-      if: always()
+      if: success() || failure()
       run: dotnet build -c release --no-restore
     - name: Upload a Build Artifact
-      if: always()
+      if: success() || failure()
       uses: actions/upload-artifact@v2.2.2
       with:
         # Artifact name
