@@ -1,0 +1,28 @@
+name: windows
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    name: Build the app
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build -c release --no-restore
+    - name: publish
+      run: dotnet publish -p:PublishSingleFile=true --no-self-contained
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        # Artifact name
+        name: trophy #.zip will be added automatically
+        path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/win-x64/publish/*.*
+        #path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/*.*
