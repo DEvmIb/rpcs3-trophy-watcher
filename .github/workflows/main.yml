@@ -1,4 +1,4 @@
-name: A workflow to build an application
+name: windows
 on:
   push:
     branches: [ master ]
@@ -18,7 +18,7 @@ jobs:
     - name: Build
       run: dotnet build -c release --no-restore
     - name: publish
-      run: dotnet publish -r win-x64
+      run: dotnet publish -r win-x64 --self-contained false
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
       with:
