@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "trophy": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Syncthing\\saves\\emu\\rpcs3\\00000001\\trophy\""
+    }
+  }
+}
