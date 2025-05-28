@@ -16,7 +16,7 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
-      run: dotnet build -c release --no-restore -r linux-x64
+      run: dotnet build -c release --no-restore
     - name: publish
       run: dotnet publish -p:PublishSingleFile=true --no-self-contained -r linux-x64 -p:DebugType=None -p:DebugSymbols=false
     - name: Upload a Build Artifact
