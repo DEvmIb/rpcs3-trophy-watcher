@@ -18,7 +18,7 @@ jobs:
     - name: Build
       run: dotnet build -c release --no-restore
     - name: publish
-      run: dotnet publish -r win-x64 --self-contained false
+      run: dotnet publish -p:PublishSingleFile=true --no-self-contained
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
       with:
