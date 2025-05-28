@@ -18,11 +18,11 @@ jobs:
     - name: Build
       run: dotnet build -c release --no-restore
     - name: publish
-      run: dotnet publish -p:PublishSingleFile=true --self-contained=true -r linux-x64 -p:DebugType=None -p:DebugSymbols=false
+      run: dotnet publish -r linux-x64 --self-contained
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v4
       with:
         # Artifact name
         name: trophy #.zip will be added automatically
-        path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/linux-x64/*.*
-        #path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/linux-x64/publish/*.*
+        #path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/linux-x64/*.*
+        path: /home/runner/work/rpcs3-trophy-watcher/rpcs3-trophy-watcher/bin/Release/net8.0/linux-x64/publish/*.*
