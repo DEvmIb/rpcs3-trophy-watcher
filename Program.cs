@@ -1,7 +1,7 @@
 ﻿// https://github.com/Lacro59/playnite-plugincommon/blob/6587fd0720762e9aa93543d89da76eeb2fe35b8a/CommonPluginsShared/Tools.cs#L17
 // https://github.com/Lacro59/playnite-successstory-plugin/blob/master/source/Clients/Rpcs3Achievements.cs
 // https://learn.microsoft.com/de-de/dotnet/api/system.io.filesystemwatcher?view=net-9.0&redirectedfrom=MSDN
-
+// todo: there wrote some xml's ha groups. game: ?skate?
 using System.Globalization;
 using System.IO;
 using System.Text;
