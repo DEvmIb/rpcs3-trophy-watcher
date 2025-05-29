@@ -14,6 +14,6 @@ trophy.exe "C:\rpcs3\dev_hdd0\home\00000001\trophy"
 
 ## Example
 
-This is an example how you can build your own Archivement Watcher.
+This is an example how you can build your own Achivement Watcher.
 
 ![what](/example/what.gif)
